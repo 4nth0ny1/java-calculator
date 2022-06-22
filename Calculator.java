@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;  
-
 
 public class Calculator {
 	public static void main(String[] args) {
