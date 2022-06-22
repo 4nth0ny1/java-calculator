@@ -3,19 +3,6 @@ import java.util.Arrays;
 
 
 public class Calculator {
-	// public static void main(String[] args) {
-
-	// 	Scanner scan = new Scanner(System.in);
-	// 	double fnum, snum, answer;
-	// 	System.out.println("Enter first number: ");
-	// 	fnum = scan.nextDouble();
-	// 	System.out.println("Enter first number: ");
-	// 	snum = scan.nextDouble();
-	// 	answer = fnum + snum; 
-	// 	System.out.println(answer);
-
-	// }
-
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		double firstN, secondN, answer, operation;
