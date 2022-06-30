@@ -1,12 +1,33 @@
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
-	
-	@Test 
-	void twoPlusTwoShouldEqualFour() {
-		var calc = new Calculator();
-		assertEquals(expected:4, calc.add(numberA:2, numberB:2));
-	}
+  
+        @Test
+        public void twoPlusTwoEqualsFour(){
+            Calculator calc = new Calculator();
+            assertEquals(4, calc.add(2, 2));
+        }
+
+        @Test
+        public void twoMinusTwoEqualsZero(){
+            Calculator calc = new Calculator();
+            assertEquals(0, calc.subtract(2, 2));
+        }
+
+        @Test
+        public void twoTimesThreeEqualsSix(){
+            Calculator calc = new Calculator();
+            assertEquals(6, calc.multiply(2, 3));
+        }
+
+        @Test
+        public void tenDividedByTwoEqualsFive(){
+            Calculator calc = new Calculator();
+            assertEquals(5, calc.divide(10, 2));
+        }
+    
 }
+
+
+

@@ -1,41 +1,17 @@
-import java.util.Scanner;
-
 public class Calculator {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		double firstN, secondN, answer, operation;
-		
-		System.out.println("Enter 1 for add");
-		System.out.println("Enter 2 for subtract");
-		System.out.println("Enter 3 for multiplication");
-		System.out.println("Enter 4 for divide");
-		operation = scan.nextDouble();
+    public int add(int a, int b) {
+        return a + b;
+    }
 
-		System.out.println("Enter first number: ");
-		firstN = scan.nextDouble();
-			
-		System.out.println("Enter second number: ");
-		secondN = scan.nextDouble();
-		
-		if (operation == 1) {
-			answer = firstN + secondN;
-			System.out.println(answer);
-		}
+    public int subtract(int a, int b) {
+        return a - b;
+    }
 
-		if (operation == 2) {
-			answer = firstN - secondN;
-			System.out.println(answer);
-		}
+    public int multiply(int a, int b) {
+        return a * b;
+    }
 
-		if (operation == 3) {
-			answer = firstN * secondN;
-			System.out.println(answer);
-		}
-
-		if (operation == 4) {
-			answer = firstN / secondN;
-			System.out.println(answer);
-		}
-	}
-
+    public int divide(int a, int b) {
+        return a / b;
+    }
 }
